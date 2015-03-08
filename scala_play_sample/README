@@ -2,3 +2,13 @@ This is your new Play application
 =================================
 
 This file will be packaged with your application, when using `activator dist`.
+
+Create sample with the help of following links. 
+
+1. https://github.com/ReactiveMongo/ReactiveMongo
+
+2. https://github.com/sgodbillon/reactivemongo-demo-app 
+
+3. http://reactivemongo.org/releases/0.10.5/documentation/advanced-topics/collection-api-design.html
+
+4. https://github.com/ReactiveMongo/Play-ReactiveMongo
