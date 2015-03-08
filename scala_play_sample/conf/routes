@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+GET 	/user-detail				controllers.Application.getUserDetail
+POST 	/save-user-detail			controllers.Application.addUserDetail
+
+GET		/mongo-create				controllers.MongoDBSampleController.create(name: String, age: Int)
+POST	/mongo-save-json			controllers.MongoDBSampleController.createFromJson
+GET		/mongo-get-user				controllers.MongoDBSampleController.findUserByName(name: String)
+GET		/mongo-all-users			controllers.MongoDBSampleController.findAllUsers
+POST	/mongo-update-user			controllers.MongoDBSampleController.updateUserDetail
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
